@@ -60,9 +60,9 @@ MAKE_HOOK_OFFSETLESS(PhotonNetworkController_OnJoinedRoom, void, Il2CppObject* s
 {
     PhotonNetworkController_OnJoinedRoom(self);
 
-    Il2CppObject* currentRoom = CRASH_UNLESS(il2cpp_utils::RunMethod("Photon.Pun", "PhotonNetwork", "get_CurrentRoom"));
+    Il2CppObject* currentRoom = (il2cpp_utils::RunMethod("Photon.Pun", "PhotonNetwork"
 
-    if (currentRoom)
+    if
     {
         moddedRoom = !CRASH_UNLESS(il2cpp_utils::RunMethod<bool>(currentRoom, "get_IsVisible"));
     }
